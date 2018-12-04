@@ -48,6 +48,15 @@ End Pkg_Log;
 
 --创建程序包体
 CREATE OR REPLACE Package Body Pkg_Log As
+/*	版本日志
+	  Version：v.1.1.0
+	  Date：2018-04-24
+	  Author：ZhengLi
+	  Release Notes：
+		1、log_id修改为Rawtohex(sys_guid()),数据类型varchar2(32)
+		2、err_text、error_backtrace修改为500
+		3、删除序列seq_log_id
+*/
     Function Log_Start
     (
         In_Object_Name Varchar2
