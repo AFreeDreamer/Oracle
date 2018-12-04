@@ -95,6 +95,19 @@ CREATE OR REPLACE Package Body Pkg_Log As
 
 End Pkg_Log;
 
+--日志包使用例子
+Create Procedure p_Example As
+	v_Log_Id Varchar2(32);
+Begin
+	v_Log_Id := Pkg_Log.Log_Start('p_example');
+        /*
+             PL/SQL块
+        */
+	Pkg_Log.Log_End(v_Log_Id);
+Exception
+	When Others Then
+		Pkg_Log.Log_Err(v_Log_Id);
+End p_Example
 
 
 
