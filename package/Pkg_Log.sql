@@ -1,7 +1,7 @@
 /*	版本日志
 	  Version：v.1.1.0
 	  Date：2018-04-24
-	  Author：zhengli
+	  Author：ZhengLi
 	  Release Notes：
 		1、log_id修改为Rawtohex(sys_guid()),数据类型varchar2(32)
 		2、err_text、error_backtrace修改为500
