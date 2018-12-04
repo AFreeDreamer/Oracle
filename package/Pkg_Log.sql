@@ -1,5 +1,5 @@
 /*	版本日志
-	  Version：v.1.1.o
+	  Version：v.1.1.0
 	  Date：2018-04-24
 	  Author：zhengli
 	  Release Notes：
